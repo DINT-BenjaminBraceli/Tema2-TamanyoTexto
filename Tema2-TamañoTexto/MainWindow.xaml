@@ -1,0 +1,53 @@
+﻿<Window x:Class="Tema2_TamañoTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_TamañoTexto"
+        mc:Ignorable="d"
+        Title="Tamaño de texto" Height="365" Width="861">
+    <Grid>
+        <RadioButton x:Name="medianoRadioButton" Content="Mediano" HorizontalAlignment="Left" Margin="368,271,0,0" VerticalAlignment="Top" Tag="mediano" Checked="RadioButton_Checked">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton x:Name="grandeRadioButton" Content="Grande" HorizontalAlignment="Left" Margin="661,271,0,0" VerticalAlignment="Top" Tag="grande" Checked="RadioButton_Checked">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton x:Name="pequeñoRadioButton" Content="Pequeño" HorizontalAlignment="Left" Margin="53,271,0,0" VerticalAlignment="Top" Tag="pequeño" Checked="RadioButton_Checked" IsChecked="False">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <TextBlock x:Name="textoTextBlock" HorizontalAlignment="Center" Margin="0,65,0,0" TextWrapping="Wrap" Text="Desarrollo de Interfaces" VerticalAlignment="Top" TextAlignment="Center" FontSize="32">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4724E6" Offset="0"/>
+                    <GradientStop Color="#FF35BCDA" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+
+    </Grid>
+</Window>
